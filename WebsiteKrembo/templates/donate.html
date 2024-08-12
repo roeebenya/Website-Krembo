@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Krembos Wings</title>
+    </head>
+    <body>
+
+        <!-- Use navigation bar for users to get around on the page-->
+        <nav class=" navbar navbar-expand-md navbar-light bg-light border">
+
+            <ul class="navbar-nav mr-auto mt-2">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">
+                        About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/programs">
+                        Programs
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+    <title>Krembos Wings Organization</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        header {
+            background: #fff;
+            color: #666;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+
+            /* Center the header using flexbox */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: left;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            color: #fff;
+            background: #e8491d;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #333;
+        }
+
+        form {
+            margin-top: 20px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 94%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Krembo's Wings</h1>
+        <div class="header">
+            <img src="https://www.israelgives.org/Pictures/AmutaPictures/38553_Large_logo.jpg" alt="logo" />
+          </div>
+        <p>Empowering Dreams, Inspiring Futures</p>
+    </header>
+
+    <div class="container">
+        <head>
+            <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+                  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+          </head>
+          <body>
+          <div class="donation-container">
+
+                      <div class="donation-box">
+                          <!-- <div class="title">Donation Information</div>
+
+                          <div class="fields">
+                              <input type="text" id="username" placeholder="username"> </input>
+                              <input type="text" id="email" placeholder="Email"> </input>
+                          </div> -->
+
+                          <div class="confirm">
+
+                          </div>
+                      </div>
+
+                  </div>
+
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
+
+          <form action="\donate" method="POST">
+            <input type="text" name="username" placeholder="username"> </input>
+            <input type="text" name="email" placeholder="Email"> </input>
+            <label for="amount">Donation Amount:</label>
+            <input type="text" name="amount" id="amount" required>
+            <input type="submit" value="Submit Donation">
+            <!-- <button type="submit">Submit Donation</button> -->
+            </form>
+
+            <script>
+            document.getElementById("donateForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevents the form from submitting in the traditional way
+
+                // Get the donation amount from the input field
+                var donation_amount = document.getElementById("amount").value;
+
+                // Display an alert with the donation amount
+                alert("Thank you for your donation of $" + donation_amount + "!");
+            });
+            </script>
+          </body>
+
+        <h2>Learn more about our work and how you can get involved:</h2>
+        <!-- Information Buttons -->
+        <button onclick="window.location.href='/about';" class="button">About Us</button>
+        <button onclick="window.location.href='/programs';" class="button">Our Programs</button>
+    </div>
+</body>
+</html>

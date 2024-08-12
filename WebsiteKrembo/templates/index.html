@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<style>
+    .card-deck {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+    .card {
+        margin: 10px; /* Adjust spacing between cards */
+    }
+    <style>
+        body {
+  padding: 50px;
+}
+
+.progress-bg {
+	margin: 0 auto;
+	width: 65%;
+	height: 78px;
+	border-radius: 10px;
+  text-align: center;
+	-moz-box-shadow:    inset 0 0 10px #ccc;
+	-webkit-box-shadow: inset 0 0 10px #ccc;
+	box-shadow:         inset 0 0 10px #ccc;
+}
+
+.progress-bar {
+	height: 78px;
+	border-radius: 10px;
+	float: left;
+	width: 50%;
+	/* fallback */
+	background-color: #1c314a;
+
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1c314a), to(#27425f));
+
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #1c314a, #27425f);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #1c314a, #27425f);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #1c314a, #27425f);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #1c314a, #27425f);
+}
+
+.progress-bg h3.goal, .progress-bg h3.raised {
+	font-family: Arial,sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+	line-height: 78px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: inline;
+}
+
+
+.progress-bg h3.raised {
+	color: #fff;
+	margin: 14px 25px 0 50px;
+	padding: 0 25px 0 0;
+}
+
+.progress-bg h3.goal {
+	color: #b2b2b2;
+  text-align: center;
+}
+
+body .progress-bg h3.raised {
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+.progress-bg h3.goal {
+	float: right;
+	display: inline;
+	padding: 0 25px 0 0;
+  text-align: center;
+}
+
+body .progress-bg div {
+	-webkit-animation: progress-bar 2s ease forwards;
+	-moz-animation: progress-bar 2s ease forwards;
+	-o-animation: progress-bar 2s ease forwards;
+	animation: progress-bar 2s ease forwards;
+}
+
+@-webkit-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@-moz-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@-o-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+            .card-deck {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adds a subtle shadow */
+        transition: 0.3s; /* Smooth transition for hover effect */
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3); /* Shadow effect on hover */
+    }
+
+    .card-body {
+        padding: 15px; /* Spacing inside the card */
+    }
+
+    .card-title {
+        color: #333; /* Title color */
+        margin-bottom: 15px; /* Spacing below title */
+    }
+
+    .card-text {
+        color: #555; /* Text color */
+        font-size: 14px; /* Adjust text size as needed */
+        line-height: 1.6; /* Spacing between lines */
+    }
+
+    .card-link {
+        color: #007bff; /* Link color */
+        text-decoration: none; /* Removes underline from links */
+    }
+
+    .card-link:hover {
+        color: #0056b3; /* Link color on hover */
+        text-decoration: underline; /* Adds underline on hover */
+    }
+
+    .text-body-secondary {
+        color: #666; /* Secondary text color */
+        font-size: 12px; /* Size of subtitle text */
+    }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            h2 {
+                color: #333;
+            }
+
+            p {
+                line-height: 1.6;
+                color: #666;
+            }
+
+    /* If you have specific colors for different cards, you can use additional classes or ids. For example: */
+    .card .card-body .special-text {
+        color: #007bff; /* Example of a special color for certain text */
+    }
+
+    /* Or target specific card by its order or id */
+    .card-deck .card:nth-child(1) .card-text {
+        color: #28a745; /* Different color for text in the first card */
+    }
+
+    .card-deck .card:nth-child(2) .card-text {
+        color: #17a2b8; /* Different color for text in the second card */
+    }
+
+    .card-deck .card:nth-child(3) .card-text {
+        color: #ffc107; /* Different color for text in the third card */
+    </style>
+
+</style>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Krembos Wings</title>
+    </head>
+    <body>
+
+        <!-- Use navigation bar for users to get around on the page-->
+        <nav class=" navbar navbar-expand-md navbar-light bg-light border">
+
+            <ul class="navbar-nav mr-auto mt-2">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">
+                        About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/programs">
+                        Programs
+                    </a>
+                </li>
+                {% if session["user_id"] %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/donate">
+                            Donate
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">
+                            Logout
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">
+                            Login
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">
+                            Register
+                        </a>
+                    </li>
+                {% endif %}
+
+            </ul>
+
+        </nav>
+        <div class="progress-bg">
+    	<div class="progress-bar">
+        	<h3 class="raised"> ${{ totalDonations }}</h3>
+        </div>
+
+        	<h3 class="goal">Goal: $100,000</h3>
+    </div>
+<html lang="en">
+    <header>
+        <div class="header">
+            <img src="https://www.israelgives.org/Pictures/AmutaPictures/38553_Large_logo.jpg" alt="logo" />
+          </div>
+        <p>Empowering Dreams, Inspiring Futures</p>
+    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+        <h1>Krembo's Wings</h1>
+        <p>Empowering Dreams, Inspiring Futures</p>
+    </header>
+    <main>
+        </div>
+        <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Welcome to Krembo's Wings</h5>
+                    <p class="card-text">Krembo's Wings is a non-profit organization dedicated to empowering individuals and inspiring them to reach their full potential.
+                         Through our various programs and initiatives, we strive to create positive change and make a lasting impact on the lives of those we serve. We hope to inspire others to serve and give back to their community.</p>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">About Us</h5>
+                    <p class="card-text">
+                        Wings of Krembo´ is a youth movement, a leader in social change, the first and only of its kind in the world, for children and youth with and without special needs. The movement has thousands of activists - children and youth, young people in the service year and students.
+                        The activists of the movement see the wings of Krembo as their youth movement and do not refer to its "volunteering".</p>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Programs</h5>
+                    <p class="card-text">Wings of Krembo´ helps children with disabilities (physical / cognitive / spatial / sensory / communication limitations) and addresses their social needs, with the aim of developing social skills, among themselves, and between themselves and their mentors.
+                        The activities transferred in the movement deal with issues on the agenda of Israeli society and universal society, and in addition, activities of contribution to the community take place in the places where the movement's branches operate.</p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
